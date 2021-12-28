@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <section class="quiz">
+    <div class="content-wrapper">
+      <h1>
+        Responda o quiz de 30 segundos e acesse o conteúdo.
+      </h1>
+
+      <div class="quiz-question-wrapper">
+
+        <div class="wrapper">
+
+
+          <div class="question">
+            <p class="pergunta">Você está insatisfeito(a) com o seu peso?</p>
+
+            <div class="respostas">
+              <div class="button-wrapper">
+                <button class="sim" id="perguntaA" onclick="passarQuestao()">Sim</button>
+              </div>
+              <div class="button-wrapper">
+                <button class="nao" id="perguntaA">Não</button>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <p class="pergunta">Você sente dificuldade de perder peso?</p>
+
+            <div class="respostas">
+              <div class="button-wrapper">
+                <button class="sim" id="perguntaA" onclick="passarQuestao()">Sim</button>
+              </div>
+              <div class="button-wrapper">
+                <button class="nao" id="perguntaA">Não</button>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <p class="pergunta">Você gostaria de perder peso sem deixar de comer o que gosta?</p>
+
+            <div class="respostas">
+              <div class="button-wrapper">
+                <button class="sim" id="perguntaA" onclick="passarQuestao()">Sim</button>
+              </div>
+              <div class="button-wrapper">
+                <button class="nao" id="perguntaA">Não</button>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <p class="pergunta">A apresentação a seguir possui um limite de pessoas que podem assistir simultaneamente,
+              você se compromete de assistir esse vídeo até o final?</p>
+
+            <div class="respostas">
+              <div class="button-wrapper">
+                <button class="sim" id="perguntaA" onclick="passarQuestao()">Sim</button>
+              </div>
+              <div class="button-wrapper">
+                <button class="nao" id="perguntaA">Não</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="progresso">
+        <buttos class="voltar-questao" onclick="voltarQuestao()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.83 11L8.41 8.41L7 7L2 12L7 17L8.41 15.59L5.83 13H22V11H5.83Z" fill="#2E3A59" />
+          </svg>
+        </buttos>
+
+        <div class="barra-de-progresso">
+          <div class="barra">
+            <div class="background"></div>
+          </div>
+          <div class="circle active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.8389 6.69459L8.81811 18.7154L3.16125 13.0586L4.57125 11.6486L8.81811 15.8854L19.4289 5.28459L20.8389 6.69459Z"
+                fill="#2E3A59" />
+            </svg>
+          </div>
+          <div class="circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.8389 6.69459L8.81811 18.7154L3.16125 13.0586L4.57125 11.6486L8.81811 15.8854L19.4289 5.28459L20.8389 6.69459Z"
+                fill="#2E3A59" />
+            </svg>
+          </div>
+          <div class="circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.8389 6.69459L8.81811 18.7154L3.16125 13.0586L4.57125 11.6486L8.81811 15.8854L19.4289 5.28459L20.8389 6.69459Z"
+                fill="#2E3A59" />
+            </svg>
+
+          </div>
+          <div class="circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.8389 6.69459L8.81811 18.7154L3.16125 13.0586L4.57125 11.6486L8.81811 15.8854L19.4289 5.28459L20.8389 6.69459Z"
+                fill="#2E3A59" />
+            </svg>
+
+          </div>
+          <div class="circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.8389 6.69459L8.81811 18.7154L3.16125 13.0586L4.57125 11.6486L8.81811 15.8854L19.4289 5.28459L20.8389 6.69459Z"
+                fill="#2E3A59" />
+            </svg>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -13,6 +13,7 @@
 .quiz {
   background: var(--cor-de-background);
   width: 100%;
+  font-family: 'Poppins', 'Inter', sans-serif;
 }
 
 .quiz .content-wrapper {
@@ -76,12 +77,12 @@
 .question p.pergunta {
   font-size: 1.5rem;
   margin-bottom: 3rem;
-  max-width: 600px;
+  max-width: 750px;
   text-align: center;
   opacity: .76;
 }
 
-.question .respostas {
+.question .respostas, .question .acessar-agora {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +93,7 @@
   width: 100%;
 }
 
-.question .respostas .button-wrapper {
+.question .respostas .button-wrapper, .question .acessar-agora .button-wrapper {
   width: 100%;
   max-width: 280px;
   background: -webkit-gradient(linear, left top, right top, from(#0288FC), to(#0DF2D3));
@@ -101,7 +102,7 @@
   border-radius: 1rem;
 }
 
-.question .respostas button {
+.question .respostas button, .question .respostas a, .question .acessar-agora button, .question .acessar-agora a {
   cursor: pointer;
   font-weight: bold;
   border-radius: .8rem;
@@ -115,16 +116,32 @@
   transition: .4s ease-in;
 }
 
-.question .respostas button:hover:not(.nao) {
+.question .respostas button:hover:not(.nao), .question .respostas a:hover:not(.nao), .question .acessar-agora button:hover:not(.nao), .question .acessar-agora a:hover:not(.nao) {
   -webkit-filter: brightness(0.9);
           filter: brightness(0.9);
 }
 
-.question .respostas button.nao {
+.question .respostas a, .question .acessar-agora a {
+  width: 280px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#0288FC), to(#0DF2D3));
+  background: linear-gradient(to right, #0288FC, #0DF2D3);
+}
+
+.question .respostas button.nao, .question .acessar-agora button.nao {
   background: #192e49;
 }
 
-.question .respostas button.nao:hover {
+.question .respostas button.nao:hover, .question .acessar-agora button.nao:hover {
   background: -webkit-gradient(linear, left top, right top, from(#0288FC), to(#0DF2D3));
   background: linear-gradient(to right, #0288FC, #0DF2D3);
 }

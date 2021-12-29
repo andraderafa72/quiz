@@ -12,7 +12,7 @@
 .quiz {
   background: var(--cor-de-background);
   width: 100%;
-  // z-index: -2;
+  font-family: 'Poppins', 'Inter', sans-serif;
   
   .content-wrapper{
     max-width: 1080px;
@@ -55,13 +55,13 @@
   p.pergunta {
     font-size: 1.5rem;
     margin-bottom: 3rem;
-    max-width: 600px;
+    max-width: 750px;
     text-align: center;
     opacity: .76;
     // font-weight: normal;
   }
 
-  .respostas {
+  .respostas, .acessar-agora {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -75,7 +75,7 @@
       border-radius: 1rem;
     }
     
-    button {
+    button, a {
       cursor: pointer;
       font-weight: bold;
       border-radius: .8rem;
@@ -91,6 +91,16 @@
         filter: brightness(.9);
       }
     }
+
+    a{
+      width: 280px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: linear-gradient(to right, #0288FC, #0DF2D3);
+    }
+
     button.nao {
       background: #192e49;
 

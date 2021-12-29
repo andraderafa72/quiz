@@ -1,30 +1,6 @@
 const $ = (query) => document.querySelector(query);
 const $$ = (query) => document.querySelectorAll(query);
 const background = document.querySelector(".barra .background");
-const body = $('body');
-
-let locationY = 0;
-let locationX = 0;
-
-body.addEventListener('mouseover', e => {
-  console.log('mouse in');
-  locationY = e.clientY
-  locationX = e.clientX
-})
-body.addEventListener('mouseleave', e => {
-  locationX = e.clientX
-  locationY = e.clientY
-  redirect()
-})
-
-function redirect(){
-  setTimeout(() => {
-    console.log('passou aqui');
-    if(locationY < 0 && locationX > 0){
-      window.location.href = 'https://protocolomacro.com/home/'
-    }
-  }, 3000)
-}
 
 let percentageCounter = 100;
 

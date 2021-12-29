@@ -14,23 +14,45 @@
   background: var(--cor-de-background);
   width: 100%;
   font-family: 'Poppins', 'Inter', sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
 }
 
 .quiz span {
+  position: absolute;
+  bottom: .5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: inline-block;
   text-align: center;
   font-size: .8rem;
-  width: 100%;
   color: #abafb6;
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
 }
 
 .quiz .content-wrapper {
+  position: relative;
   max-width: 1080px;
+  width: 100%;
   margin: 0 auto;
   color: #fff;
   min-height: 600px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,10 +69,37 @@
   padding: 4rem 2rem;
 }
 
+.quiz .content-wrapper .backlink {
+  position: absolute;
+  right: 4rem;
+  top: -2rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 1rem;
+  background: #e12b2b;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.quiz .content-wrapper .backlink:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
 .quiz h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   text-align: center;
+  width: 100%;
 }
 
 .quiz-question-wrapper {
@@ -82,6 +131,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 2rem 0;
 }
 
 .question p.pergunta {

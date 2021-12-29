@@ -13,31 +13,64 @@
   background: var(--cor-de-background);
   width: 100%;
   font-family: 'Poppins', 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
   span{
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-block;
     text-align: center;
     font-size: .8rem;
-    width: 100%;
     color: #abafb6;
     transform: translateY(-1.5rem);
   }
   
   .content-wrapper{
+    position: relative;
     max-width: 1080px;
+    width: 100%;
     margin: 0 auto;
     color: #fff;
     min-height: 600px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     padding: 4rem 2rem;
+
+    .backlink{
+      position: absolute;
+      right: 4rem;
+      top: -2rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 1rem;
+      background: #e12b2b;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: .2s;
+
+      &:hover{
+        filter: brightness(.9);
+      }
+      
+    }
   }
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 2.5rem;
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -59,6 +92,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 2rem 0;
 
   p.pergunta {
     font-size: 1.5rem;

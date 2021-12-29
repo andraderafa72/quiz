@@ -16,6 +16,16 @@
   font-family: 'Poppins', 'Inter', sans-serif;
 }
 
+.quiz span {
+  display: inline-block;
+  text-align: center;
+  font-size: .8rem;
+  width: 100%;
+  color: #abafb6;
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
 .quiz .content-wrapper {
   max-width: 1080px;
   margin: 0 auto;
@@ -261,5 +271,50 @@
 
 .progresso .barra-de-progresso .circle:nth-child(5) {
   right: calc(25%);
+}
+
+@media (max-width: 767px) {
+  .progresso {
+    width: 100%;
+    gap: 1rem;
+  }
+  .progresso .barra-de-progresso .circle {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .progresso .barra-de-progresso .circle svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .progresso .barra-de-progresso .circle.active {
+    background: var(--cor-dos-botoes);
+  }
+  .progresso .barra-de-progresso .circle:nth-child(2) {
+    left: 2rem;
+  }
+  .progresso .barra-de-progresso .circle:last-child {
+    right: 2rem;
+  }
+  .progresso .barra-de-progresso .circle:nth-child(3) {
+    left: calc(25% + .5rem);
+  }
+  .progresso .barra-de-progresso .circle:nth-child(4) {
+    left: calc(50% - .75rem);
+  }
+  .progresso .barra-de-progresso .circle:nth-child(5) {
+    right: calc(25% + .5rem);
+  }
+}
+
+@media (max-width: 375px) {
+  .question {
+    padding: 0 .5rem;
+  }
+  .quiz .content-wrapper {
+    padding: 4rem 1rem;
+  }
+  .quiz h1 {
+    font-size: 2.2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
